@@ -14,13 +14,7 @@ import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 
 const MainSlider = () => {
-  const itemData = [
-    "/image1.jpg",
-    "/image2.jpg",
-    "/image1.jpg",
-    "/image1.jpg",
-    "/image1.jpg",
-  ];
+  const itemData = ["/ceat.jpg", "/ceat1.avif"];
   return (
     <div className="">
       <Swiper
@@ -30,7 +24,7 @@ const MainSlider = () => {
         slidesPerView={1}
         onSlideChange={() => console.log("slide change")}
         onSwiper={(swiper) => console.log(swiper)}
-        autoplay={{ delay: 3000 }}
+        autoplay={{ delay: 5000 }}
       >
         {itemData.map((item, idx) => (
           <SwiperSlide key={idx}>
