@@ -1,3 +1,4 @@
+import Deals from "@/components/Deals";
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import MainSlider from "@/components/MainSlider";
@@ -12,6 +13,7 @@ export default function Home() {
       <Hero />
       <Reviews />
       <ServicesOffered />
+      <Deals />
     </div>
   );
 }
