@@ -3,6 +3,7 @@ import FilterSection from "@/components/FilterSection";
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import MainSlider from "@/components/MainSlider";
+import Payment from "@/components/Payment";
 import Reviews from "@/components/Reviews";
 import ServicesOffered from "@/components/ServicesOffered";
 
@@ -16,6 +17,7 @@ export default function Home() {
       <ServicesOffered />
       <Deals />
       <FilterSection />
+      <Payment />
     </div>
   );
 }

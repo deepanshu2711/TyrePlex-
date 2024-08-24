@@ -22,7 +22,7 @@ const Deals = () => {
           onSwiper={(swiper) => console.log(swiper)}
           breakpoints={{
             320: {
-              slidesPerView: 2.2,
+              slidesPerView: 1.2,
               spaceBetween: 10,
             },
             480: {
@@ -35,7 +35,7 @@ const Deals = () => {
             },
 
             720: {
-              slidesPerView: 6,
+              slidesPerView: 7,
               spaceBetween: 10,
             },
           }}
@@ -45,7 +45,7 @@ const Deals = () => {
           <SwiperSlide className="border p-4 rounded-md mb-10 shadow-lg">
             <div className="flex flex-col items-center">
               <Image src={"/mrf.webp"} alt="mrf" height={100} width={100} />
-              <p className="text-xl font-semibold text-gray-500">MRF</p>
+              {/* <p className="text-xl font-semibold text-gray-500">MRF</p> */}
             </div>
           </SwiperSlide>
           <SwiperSlide className="border p-4 rounded-md mb-10 shadow-lg">
@@ -56,7 +56,7 @@ const Deals = () => {
                 height={100}
                 width={100}
               />
-              <p className="text-xl font-semibold text-gray-500">CEAT</p>
+              {/* <p className="text-xl font-semibold text-gray-500">CEAT</p> */}
             </div>
           </SwiperSlide>
           <SwiperSlide className="border p-4 rounded-md mb-10 shadow-lg">
@@ -68,7 +68,7 @@ const Deals = () => {
                 width={100}
                 className="h-[75px] w-full"
               />
-              <p className="text-xl font-semibold text-gray-500">GOODYEAR</p>
+              {/* <p className="text-xl font-semibold text-gray-500">GOODYEAR</p> */}
             </div>
           </SwiperSlide>
           <SwiperSlide className="border p-4 rounded-md mb-10 shadow-lg">
@@ -80,7 +80,7 @@ const Deals = () => {
                 width={100}
                 className="h-[75px] w-[100%]"
               />
-              <p className="text-xl font-semibold text-gray-500">APOLLO</p>
+              {/* <p className="text-xl font-semibold text-gray-500">APOLLO</p> */}
             </div>
           </SwiperSlide>
           <SwiperSlide className="border p-4 rounded-md mb-10 shadow-lg">
@@ -92,7 +92,7 @@ const Deals = () => {
                 width={100}
                 className="h-[75px] w-[100%]"
               />
-              <p className="text-xl font-semibold text-gray-500">BRIDGESTONE</p>
+              {/* <p className="text-xl font-semibold text-gray-500">BRIDGESTONE</p> */}
             </div>
           </SwiperSlide>
           <SwiperSlide className="border p-4 rounded-md mb-10 shadow-lg">
@@ -104,13 +104,7 @@ const Deals = () => {
                 width={100}
                 className="h-[75px] w-[100%]"
               />
-              <p className="text-xl font-semibold text-gray-500">JKTYRE</p>
-            </div>
-          </SwiperSlide>
-          <SwiperSlide className="border p-4 rounded-md mb-10 shadow-lg">
-            <div className="flex flex-col items-center">
-              <Image src={"/mrf.webp"} alt="mrf" height={100} width={100} />
-              <p className="text-xl font-semibold text-gray-500">MRF</p>
+              {/* <p className="text-xl font-semibold text-gray-500">JKTYRE</p> */}
             </div>
           </SwiperSlide>
           {/* // ))} */}

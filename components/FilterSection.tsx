@@ -57,7 +57,7 @@ const FilterSection = () => {
         <Tyrecard />
         <Tyrecard />
       </div>
-      <div className="flex items-center justify-center mt-4">
+      <div className="flex items-center justify-center mt-8">
         <Button variant="outlined" className="">
           View more
         </Button>
