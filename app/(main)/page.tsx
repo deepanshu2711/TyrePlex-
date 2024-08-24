@@ -1,5 +1,6 @@
 import Deals from "@/components/Deals";
 import FilterSection from "@/components/FilterSection";
+import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import MainSlider from "@/components/MainSlider";
@@ -18,6 +19,7 @@ export default function Home() {
       <Deals />
       <FilterSection />
       <Payment />
+      <Footer />
     </div>
   );
 }
