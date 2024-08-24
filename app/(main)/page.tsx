@@ -1,4 +1,5 @@
 import Deals from "@/components/Deals";
+import FilterSection from "@/components/FilterSection";
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import MainSlider from "@/components/MainSlider";
@@ -14,6 +15,7 @@ export default function Home() {
       <Reviews />
       <ServicesOffered />
       <Deals />
+      <FilterSection />
     </div>
   );
 }
