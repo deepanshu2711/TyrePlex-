@@ -42,8 +42,8 @@ const data = {
 
 const Header = () => {
   return (
-    <div className="bg-white p-2">
-      <div className="flex items-center justify-between max-w-7xl mx-auto">
+    <div className="bg-white py-2">
+      <div className="flex items-center justify-between max-w-full px-5 md:px-[90px]">
         <MenuIcon className="md:hidden" />
         <Image
           src={"/TP-logo.webp"}

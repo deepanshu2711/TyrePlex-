@@ -4,7 +4,7 @@ import FmdGoodIcon from "@mui/icons-material/FmdGood";
 import AccessTimeIcon from "@mui/icons-material/AccessTime";
 const Hero = () => {
   return (
-    <div className="max-w-7xl flex md:flex-row flex-col items-center justify-between mx-auto mt-2 md:mt-6 md:p-0 p-5">
+    <div className="max-w-full  flex md:flex-row flex-col items-center justify-between mx-auto  mt-2 md:my-6 md:px-[90px] p-5">
       <div className="flex flex-col gap-1 w-full md:max-w-[600px]">
         <div className="flex items-center justify-between md:gap-5">
           <h3 className="md:text-2xl text-lg font-semibold text-gray-700">
