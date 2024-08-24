@@ -39,7 +39,7 @@ const MainSlider = () => {
               alt="image"
               width={400}
               height={400}
-              className="w-full h-[60vh] object-cover"
+              className="w-full h-[65vh] object-cover"
             />
           </SwiperSlide>
         ))}
