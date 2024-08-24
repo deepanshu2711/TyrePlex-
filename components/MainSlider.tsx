@@ -19,7 +19,6 @@ const MainSlider = () => {
     <div className="">
       <Swiper
         modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
-        navigation
         spaceBetween={10}
         slidesPerView={1}
         onSlideChange={() => console.log("slide change")}

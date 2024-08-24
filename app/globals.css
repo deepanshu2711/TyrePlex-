@@ -4,32 +4,4 @@
 @tailwind utilities;
 
 
-/* Custom Swiper styles for simple arrows */
-.swiper-button-next,
-.swiper-button-prev {
-  color: #fff; /* Arrow color */
-  background-color: #000; /* Background color */
-  opacity: 1; /* Arrow background opacity */
-  padding: 20px; /* Padding around the arrows */
-  border-radius: 50%; /* Make the arrows circular */
-  width: 40px; /* Set fixed width for the button */
-  height: 40px; /* Set fixed height for the button */
-  display: flex; /* Use flexbox to align the arrow icon */
-  align-items: center; /* Center arrow vertically */
-  justify-content: center; /* Center arrow horizontally */
-  transition: background-color 0.3s ease, opacity 0.3s ease; /* Smooth transition for hover effect */
-}
-
-.swiper-button-next:hover,
-.swiper-button-prev:hover {
-  background-color: #333; /* Darker background on hover */
-  opacity: 1; /* Increase opacity on hover */
-}
-
-/* Arrow icon styling */
-.swiper-button-next::after,
-.swiper-button-prev::after {
-  font-size: 18px !important; /* Arrow icon size */
-  font-weight: bold; /* Make the arrow bold */
-}
 
