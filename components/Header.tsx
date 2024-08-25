@@ -1,10 +1,19 @@
 "use client";
 import Image from "next/image";
 import PersonIcon from "@mui/icons-material/Person";
-import { Button } from "@mui/material";
-import React from "react";
+import {
+  Accordion,
+  AccordionActions,
+  AccordionDetails,
+  AccordionSummary,
+  Button,
+  Drawer,
+} from "@mui/material";
+import React, { useState } from "react";
 import HeaderToolTip from "./HeaderTooltip";
 import MenuIcon from "@mui/icons-material/Menu";
+import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
+import CloseIcon from "@mui/icons-material/Close";
 
 const data = {
   "Car Tyres": [
@@ -41,10 +50,13 @@ const data = {
 };
 
 const Header = () => {
+  const [open, setOpen] = useState(false);
   return (
     <div className="bg-white py-2">
       <div className="flex items-center justify-between max-w-full px-5 md:px-[90px]">
-        <MenuIcon className="md:hidden" />
+        <div className="md:hidden" onClick={() => setOpen(true)}>
+          <MenuIcon />
+        </div>
         <Image
           src={"/TP-logo.webp"}
           width={100}
@@ -66,6 +78,45 @@ const Header = () => {
           <Button variant="text">Login</Button>
         </div>
       </div>
+      <Drawer open={open} onClose={() => setOpen(false)}>
+        <div className="">
+          <div className="flex items-center p-5 justify-between">
+            <Image
+              src={"/TP-logo.webp"}
+              width={100}
+              height={100}
+              alt="logo"
+              className=""
+            />
+            <div onClick={() => setOpen(false)}>
+              <CloseIcon />
+            </div>
+          </div>
+          {Object.keys(data).map((key, idx) => (
+            <Accordion className="min-w-[300px]" key={idx}>
+              <AccordionSummary
+                expandIcon={<ExpandMoreIcon />}
+                aria-controls="panel1-content"
+                id="panel1-header"
+              >
+                {key}
+              </AccordionSummary>
+              <AccordionDetails className="flex flex-col">
+                {data[key as keyof typeof data] &&
+                  data[key as keyof typeof data].length > 0 &&
+                  data[key as keyof typeof data].slice(1).map((item, idx) => (
+                    <p
+                      key={idx}
+                      className="text-[16px] px-2 py-1  text-blue-500"
+                    >
+                      {item}
+                    </p>
+                  ))}
+              </AccordionDetails>
+            </Accordion>
+          ))}
+        </div>
+      </Drawer>
     </div>
   );
 };
